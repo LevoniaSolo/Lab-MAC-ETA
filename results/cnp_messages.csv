@@ -1,0 +1,170 @@
+id,time,sender,receiver,type,task_id,payload
+1,0,G,C,NEW_TASK,1,{}
+2,1,C,W1,CFP,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+3,1,C,W2,CFP,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+4,1,C,W3,CFP,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+5,1,C,W4,CFP,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+6,2,W1,C,PROPOSAL,1,"{'load': 1.0, 'balance': 0.0}"
+7,2,W2,C,PROPOSAL,1,"{'load': 0.5, 'balance': 0.0}"
+8,2,W3,C,PROPOSAL,1,"{'load': 0.41666666666666663, 'balance': 0.16666666666666663}"
+9,2,W4,C,PROPOSAL,1,"{'load': 0.4583333333333333, 'balance': 0.4166666666666667}"
+10,3,G,C,NEW_TASK,2,{}
+11,3,C,W3,TASK_OFFER,1,{}
+12,4,W3,C,TASK_ACCEPT,1,{}
+13,4,W3,C,TASK_START,1,{}
+14,4,C,W1,PROPOSAL_REJECT,1,{}
+15,4,C,W2,PROPOSAL_REJECT,1,{}
+16,4,C,W4,PROPOSAL_REJECT,1,{}
+17,4,C,W1,CFP,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+18,5,W1,C,PROPOSAL,2,"{'load': 0.5, 'balance': 0.0}"
+19,5,C,W2,CFP,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+20,5,C,W3,CFP,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+21,5,C,W4,CFP,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+22,6,G,C,NEW_TASK,3,{}
+23,6,W2,C,PROPOSAL,2,"{'load': 0.25, 'balance': 0.0}"
+24,6,W3,C,PROPOSAL,2,"{'load': 0.625, 'balance': 0.25}"
+25,6,W4,C,PROPOSAL,2,"{'load': 0.22916666666666666, 'balance': 0.20833333333333337}"
+26,7,C,W4,TASK_OFFER,2,{}
+27,8,W4,C,TASK_ACCEPT,2,{}
+28,8,W4,C,TASK_START,2,{}
+29,8,C,W1,PROPOSAL_REJECT,2,{}
+30,8,C,W2,PROPOSAL_REJECT,2,{}
+31,8,C,W3,PROPOSAL_REJECT,2,{}
+32,8,C,W1,CFP,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+33,8,C,W2,CFP,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+34,9,G,C,NEW_TASK,4,{}
+35,9,W1,C,PROPOSAL,3,"{'load': 0.375, 'balance': 0.25}"
+36,9,W2,C,PROPOSAL,3,"{'load': 0.1875, 'balance': 0.125}"
+37,9,C,W3,CFP,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+38,9,C,W4,CFP,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+39,10,W3,C,TASK_COMPLETE,1,{'finished_at': 10}
+40,10,W3,C,PROPOSAL,3,"{'load': 0.14583333333333331, 'balance': 0.04166666666666663}"
+41,10,W4,C,PROPOSAL,3,"{'load': 0.4270833333333333, 'balance': 0.4791666666666667}"
+42,10,C,W1,CFP,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+43,10,C,W2,CFP,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+44,11,W1,C,PROPOSAL,4,"{'load': 0.375, 'balance': 0.25}"
+45,11,W2,C,PROPOSAL,4,"{'load': 0.1875, 'balance': 0.125}"
+46,11,C,W3,CFP,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+47,11,C,W4,CFP,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+48,11,C,G,TASK_RESULT,1,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 10}"
+49,12,G,C,NEW_TASK,5,{}
+50,12,W3,C,PROPOSAL,4,"{'load': 0.14583333333333331, 'balance': 0.04166666666666663}"
+51,12,W4,C,PROPOSAL,4,"{'load': 0.4270833333333333, 'balance': 0.4791666666666667}"
+52,12,C,W3,TASK_OFFER,3,{}
+53,12,C,W1,PROPOSAL_REJECT,3,{}
+54,13,W3,C,TASK_ACCEPT,3,{}
+55,13,W3,C,TASK_START,3,{}
+56,13,C,W2,PROPOSAL_REJECT,3,{}
+57,13,C,W4,PROPOSAL_REJECT,3,{}
+58,14,C,W3,TASK_OFFER,4,{}
+59,14,C,W1,PROPOSAL_REJECT,4,{}
+60,14,C,W2,PROPOSAL_REJECT,4,{}
+61,15,G,C,NEW_TASK,6,{}
+62,15,W3,C,TASK_ACCEPT,4,{}
+63,15,W3,C,TASK_START,4,{}
+64,15,C,W4,PROPOSAL_REJECT,4,{}
+65,15,C,W1,CFP,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+66,15,C,W2,CFP,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+67,15,C,W3,CFP,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+68,15,C,W4,CFP,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+69,16,W1,C,PROPOSAL,5,"{'load': 0.625, 'balance': 0.75}"
+70,16,W2,C,PROPOSAL,5,"{'load': 0.3125, 'balance': 0.375}"
+71,16,W3,C,PROPOSAL,5,"{'load': 0.5833333333333334, 'balance': 0.33333333333333337}"
+72,16,W4,C,PROPOSAL,5,"{'load': 0.4375, 'balance': 0.125}"
+73,16,C,W1,CFP,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+74,16,C,W2,CFP,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+75,17,W4,C,TASK_COMPLETE,2,{'finished_at': 17}
+76,17,W1,C,PROPOSAL,6,"{'load': 0.375, 'balance': 0.25}"
+77,17,W2,C,PROPOSAL,6,"{'load': 0.1875, 'balance': 0.125}"
+78,17,C,W3,CFP,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+79,17,C,W4,CFP,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+80,18,G,C,NEW_TASK,7,{}
+81,18,W3,C,PROPOSAL,6,"{'load': 0.4375, 'balance': 0.125}"
+82,18,W4,C,PROPOSAL,6,"{'load': 0.19791666666666666, 'balance': 0.27083333333333337}"
+83,18,C,G,TASK_RESULT,2,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 17}"
+84,19,W3,C,TASK_COMPLETE,3,{'finished_at': 19}
+85,19,C,W2,TASK_OFFER,5,{}
+86,19,C,W1,PROPOSAL_REJECT,5,{}
+87,19,C,W3,PROPOSAL_REJECT,5,{}
+88,20,W3,C,TASK_COMPLETE,4,{'finished_at': 20}
+89,20,W2,C,TASK_ACCEPT,5,{}
+90,20,W2,C,TASK_START,5,{}
+91,20,C,W4,PROPOSAL_REJECT,5,{}
+92,20,C,W1,CFP,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+93,20,C,W2,CFP,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+94,21,G,C,NEW_TASK,8,{}
+95,21,W1,C,PROPOSAL,7,"{'load': 0.25, 'balance': 0.0}"
+96,21,W2,C,PROPOSAL,7,"{'load': 0.4375, 'balance': 0.375}"
+97,21,C,W3,CFP,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+98,21,C,W4,CFP,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+99,21,C,G,TASK_RESULT,3,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 19}"
+100,22,W3,C,PROPOSAL,7,"{'load': 0.10416666666666666, 'balance': 0.04166666666666663}"
+101,22,W4,C,PROPOSAL,7,"{'load': 0.11458333333333333, 'balance': 0.10416666666666663}"
+102,22,C,W2,TASK_OFFER,6,{}
+103,22,C,W1,PROPOSAL_REJECT,6,{}
+104,23,W2,C,TASK_ACCEPT,6,{}
+105,23,W2,C,TASK_START,6,{}
+106,23,C,W3,PROPOSAL_REJECT,6,{}
+107,23,C,W4,PROPOSAL_REJECT,6,{}
+108,23,C,G,TASK_RESULT,4,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 20}"
+109,24,G,C,NEW_TASK,9,{}
+110,24,C,W1,CFP,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+111,24,C,W2,CFP,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+112,25,W1,C,PROPOSAL,8,"{'load': 0.625, 'balance': 0.75}"
+113,25,W2,C,TASK_REJECT,8,{'reason': 'insufficient_resources'}
+114,25,C,W3,CFP,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+115,25,C,W4,CFP,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+116,25,C,W3,TASK_OFFER,7,{}
+117,25,C,W1,PROPOSAL_REJECT,7,{}
+118,26,W3,C,PROPOSAL,8,"{'load': 0.2916666666666667, 'balance': 0.41666666666666663}"
+119,26,W4,C,PROPOSAL,8,"{'load': 0.20833333333333331, 'balance': 0.08333333333333337}"
+120,26,W3,C,TASK_ACCEPT,7,{}
+121,26,W3,C,TASK_START,7,{}
+122,26,C,W2,PROPOSAL_REJECT,7,{}
+123,26,C,W4,PROPOSAL_REJECT,7,{}
+124,26,C,W1,CFP,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+125,27,G,C,NEW_TASK,10,{}
+126,27,W1,C,PROPOSAL,9,"{'load': 0.5, 'balance': 0.0}"
+127,27,C,W2,CFP,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+128,27,C,W3,CFP,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+129,27,C,W4,CFP,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+130,28,W2,C,PROPOSAL,9,"{'load': 0.75, 'balance': 0.25}"
+131,28,W3,C,PROPOSAL,9,"{'load': 0.3125, 'balance': 0.125}"
+132,28,W4,C,PROPOSAL,9,"{'load': 0.22916666666666666, 'balance': 0.20833333333333337}"
+133,28,C,W4,TASK_OFFER,8,{}
+134,28,C,W1,PROPOSAL_REJECT,8,{}
+135,29,W2,C,TASK_COMPLETE,5,{'finished_at': 29}
+136,29,W3,C,TASK_COMPLETE,7,{'finished_at': 29}
+137,29,W4,C,TASK_ACCEPT,8,{}
+138,29,W4,C,TASK_START,8,{}
+139,29,C,W3,PROPOSAL_REJECT,8,{}
+140,29,C,W1,CFP,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+141,29,C,W2,CFP,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+142,30,W1,C,PROPOSAL,10,"{'load': 0.625, 'balance': 0.75}"
+143,30,W2,C,PROPOSAL,10,"{'load': 0.5, 'balance': 0.5}"
+144,30,C,W3,CFP,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+145,30,C,W4,CFP,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+146,31,W2,C,TASK_COMPLETE,6,{'finished_at': 31}
+147,31,W3,C,PROPOSAL,10,"{'load': 0.22916666666666666, 'balance': 0.20833333333333337}"
+148,31,W4,C,PROPOSAL,10,"{'load': 0.5729166666666667, 'balance': 0.5208333333333334}"
+149,31,C,G,TASK_RESULT,5,"{'result': 'SUCCESS', 'worker': 'W2', 'finished_at': 29}"
+150,31,C,W4,TASK_OFFER,9,{}
+151,31,C,W1,PROPOSAL_REJECT,9,{}
+152,32,W4,C,TASK_ACCEPT,9,{}
+153,32,W4,C,TASK_START,9,{}
+154,32,C,W2,PROPOSAL_REJECT,9,{}
+155,32,C,W3,PROPOSAL_REJECT,9,{}
+156,33,W4,C,TASK_COMPLETE,8,{'finished_at': 33}
+157,33,C,G,TASK_RESULT,7,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 29}"
+158,33,C,G,TASK_RESULT,6,"{'result': 'SUCCESS', 'worker': 'W2', 'finished_at': 31}"
+159,34,C,W3,TASK_OFFER,10,{}
+160,34,C,W1,PROPOSAL_REJECT,10,{}
+161,35,W3,C,TASK_ACCEPT,10,{}
+162,35,W3,C,TASK_START,10,{}
+163,35,C,W2,PROPOSAL_REJECT,10,{}
+164,35,C,W4,PROPOSAL_REJECT,10,{}
+165,35,C,G,TASK_RESULT,8,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 33}"
+166,38,W4,C,TASK_COMPLETE,9,{'finished_at': 38}
+167,39,C,G,TASK_RESULT,9,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 38}"
+168,40,W3,C,TASK_COMPLETE,10,{'finished_at': 40}
+169,41,C,G,TASK_RESULT,10,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 40}"

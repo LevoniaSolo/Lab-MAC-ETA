@@ -1,0 +1,141 @@
+id,time,sender,receiver,type,task_id,payload
+1,0,G,C,NEW_TASK,1,{}
+2,1,C,W1,STATUS_REQUEST,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+3,1,C,W2,STATUS_REQUEST,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+4,1,C,W3,STATUS_REQUEST,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+5,1,C,W4,STATUS_REQUEST,1,"{'cpu': 4, 'ram': 8, 'duration': 6}"
+6,2,W1,C,STATUS_RESPONSE,1,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+7,2,W2,C,STATUS_RESPONSE,1,"{'cpu': 8, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+8,2,W3,C,STATUS_RESPONSE,1,"{'cpu': 12, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+9,2,W4,C,STATUS_RESPONSE,1,"{'cpu': 6, 'ram': 32, 'cpu_used': 0, 'ram_used': 0}"
+10,3,G,C,NEW_TASK,2,{}
+11,3,C,W3,TASK_OFFER,1,{}
+12,4,W3,C,TASK_ACCEPT,1,{}
+13,4,W3,C,TASK_START,1,{}
+14,4,C,W1,STATUS_REQUEST,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+15,4,C,W2,STATUS_REQUEST,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+16,4,C,W3,STATUS_REQUEST,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+17,4,C,W4,STATUS_REQUEST,2,"{'cpu': 2, 'ram': 4, 'duration': 9}"
+18,5,W1,C,STATUS_RESPONSE,2,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+19,5,W2,C,STATUS_RESPONSE,2,"{'cpu': 8, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+20,5,W3,C,STATUS_RESPONSE,2,"{'cpu': 12, 'ram': 16, 'cpu_used': 4, 'ram_used': 8}"
+21,5,W4,C,STATUS_RESPONSE,2,"{'cpu': 6, 'ram': 32, 'cpu_used': 0, 'ram_used': 0}"
+22,6,G,C,NEW_TASK,3,{}
+23,6,C,W4,TASK_OFFER,2,{}
+24,7,W4,C,TASK_ACCEPT,2,{}
+25,7,W4,C,TASK_START,2,{}
+26,7,C,W1,STATUS_REQUEST,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+27,7,C,W2,STATUS_REQUEST,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+28,7,C,W3,STATUS_REQUEST,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+29,7,C,W4,STATUS_REQUEST,3,"{'cpu': 2, 'ram': 2, 'duration': 6}"
+30,8,W1,C,STATUS_RESPONSE,3,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+31,8,W2,C,STATUS_RESPONSE,3,"{'cpu': 8, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+32,8,W3,C,STATUS_RESPONSE,3,"{'cpu': 12, 'ram': 16, 'cpu_used': 4, 'ram_used': 8}"
+33,8,W4,C,STATUS_RESPONSE,3,"{'cpu': 6, 'ram': 32, 'cpu_used': 2, 'ram_used': 4}"
+34,9,G,C,NEW_TASK,4,{}
+35,9,C,W2,TASK_OFFER,3,{}
+36,10,W3,C,TASK_COMPLETE,1,{'finished_at': 10}
+37,10,W2,C,TASK_ACCEPT,3,{}
+38,10,W2,C,TASK_START,3,{}
+39,10,C,W1,STATUS_REQUEST,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+40,10,C,W2,STATUS_REQUEST,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+41,10,C,W3,STATUS_REQUEST,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+42,10,C,W4,STATUS_REQUEST,4,"{'cpu': 2, 'ram': 2, 'duration': 5}"
+43,11,W1,C,STATUS_RESPONSE,4,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+44,11,W2,C,STATUS_RESPONSE,4,"{'cpu': 8, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+45,11,W3,C,STATUS_RESPONSE,4,"{'cpu': 12, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+46,11,W4,C,STATUS_RESPONSE,4,"{'cpu': 6, 'ram': 32, 'cpu_used': 2, 'ram_used': 4}"
+47,11,C,G,TASK_RESULT,1,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 10}"
+48,12,G,C,NEW_TASK,5,{}
+49,12,C,W3,TASK_OFFER,4,{}
+50,13,W3,C,TASK_ACCEPT,4,{}
+51,13,W3,C,TASK_START,4,{}
+52,13,C,W1,STATUS_REQUEST,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+53,13,C,W2,STATUS_REQUEST,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+54,13,C,W3,STATUS_REQUEST,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+55,13,C,W4,STATUS_REQUEST,5,"{'cpu': 1, 'ram': 8, 'duration': 9}"
+56,14,W1,C,STATUS_RESPONSE,5,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+57,14,W2,C,STATUS_RESPONSE,5,"{'cpu': 8, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+58,14,W3,C,STATUS_RESPONSE,5,"{'cpu': 12, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+59,14,W4,C,STATUS_RESPONSE,5,"{'cpu': 6, 'ram': 32, 'cpu_used': 2, 'ram_used': 4}"
+60,15,G,C,NEW_TASK,6,{}
+61,15,C,W4,TASK_OFFER,5,{}
+62,16,W2,C,TASK_COMPLETE,3,{'finished_at': 16}
+63,16,W4,C,TASK_COMPLETE,2,{'finished_at': 16}
+64,16,W4,C,TASK_ACCEPT,5,{}
+65,16,W4,C,TASK_START,5,{}
+66,16,C,W1,STATUS_REQUEST,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+67,16,C,W2,STATUS_REQUEST,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+68,16,C,W3,STATUS_REQUEST,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+69,16,C,W4,STATUS_REQUEST,6,"{'cpu': 2, 'ram': 2, 'duration': 8}"
+70,17,W1,C,STATUS_RESPONSE,6,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+71,17,W2,C,STATUS_RESPONSE,6,"{'cpu': 8, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+72,17,W3,C,STATUS_RESPONSE,6,"{'cpu': 12, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+73,17,W4,C,STATUS_RESPONSE,6,"{'cpu': 6, 'ram': 32, 'cpu_used': 1, 'ram_used': 8}"
+74,17,C,G,TASK_RESULT,3,"{'result': 'SUCCESS', 'worker': 'W2', 'finished_at': 16}"
+75,17,C,G,TASK_RESULT,2,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 16}"
+76,18,W3,C,TASK_COMPLETE,4,{'finished_at': 18}
+77,18,G,C,NEW_TASK,7,{}
+78,19,C,W2,TASK_OFFER,6,{}
+79,19,C,G,TASK_RESULT,4,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 18}"
+80,19,C,W1,STATUS_REQUEST,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+81,20,W2,C,TASK_ACCEPT,6,{}
+82,20,W2,C,TASK_START,6,{}
+83,20,W1,C,STATUS_RESPONSE,7,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+84,20,C,W2,STATUS_REQUEST,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+85,20,C,W3,STATUS_REQUEST,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+86,20,C,W4,STATUS_REQUEST,7,"{'cpu': 1, 'ram': 2, 'duration': 3}"
+87,21,G,C,NEW_TASK,8,{}
+88,21,W2,C,STATUS_RESPONSE,7,"{'cpu': 8, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+89,21,W3,C,STATUS_RESPONSE,7,"{'cpu': 12, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+90,21,W4,C,STATUS_RESPONSE,7,"{'cpu': 6, 'ram': 32, 'cpu_used': 1, 'ram_used': 8}"
+91,22,C,W3,TASK_OFFER,7,{}
+92,23,W3,C,TASK_ACCEPT,7,{}
+93,23,W3,C,TASK_START,7,{}
+94,23,C,W1,STATUS_REQUEST,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+95,23,C,W2,STATUS_REQUEST,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+96,23,C,W3,STATUS_REQUEST,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+97,23,C,W4,STATUS_REQUEST,8,"{'cpu': 1, 'ram': 8, 'duration': 4}"
+98,24,G,C,NEW_TASK,9,{}
+99,24,W1,C,STATUS_RESPONSE,8,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+100,24,W2,C,STATUS_RESPONSE,8,"{'cpu': 8, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+101,24,W3,C,STATUS_RESPONSE,8,"{'cpu': 12, 'ram': 16, 'cpu_used': 1, 'ram_used': 2}"
+102,24,W4,C,STATUS_RESPONSE,8,"{'cpu': 6, 'ram': 32, 'cpu_used': 1, 'ram_used': 8}"
+103,25,W4,C,TASK_COMPLETE,5,{'finished_at': 25}
+104,26,W3,C,TASK_COMPLETE,7,{'finished_at': 26}
+105,26,C,W3,TASK_OFFER,8,{}
+106,26,C,W1,STATUS_REQUEST,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+107,26,C,W2,STATUS_REQUEST,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+108,26,C,W3,STATUS_REQUEST,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+109,27,G,C,NEW_TASK,10,{}
+110,27,W3,C,TASK_ACCEPT,8,{}
+111,27,W3,C,TASK_START,8,{}
+112,27,W1,C,STATUS_RESPONSE,9,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+113,27,W2,C,STATUS_RESPONSE,9,"{'cpu': 8, 'ram': 16, 'cpu_used': 2, 'ram_used': 2}"
+114,27,W3,C,STATUS_RESPONSE,9,"{'cpu': 12, 'ram': 16, 'cpu_used': 1, 'ram_used': 8}"
+115,27,C,W4,STATUS_REQUEST,9,"{'cpu': 2, 'ram': 4, 'duration': 6}"
+116,27,C,G,TASK_RESULT,5,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 25}"
+117,27,C,G,TASK_RESULT,7,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 26}"
+118,28,W2,C,TASK_COMPLETE,6,{'finished_at': 28}
+119,28,W4,C,STATUS_RESPONSE,9,"{'cpu': 6, 'ram': 32, 'cpu_used': 0, 'ram_used': 0}"
+120,29,C,W1,STATUS_REQUEST,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+121,29,C,W2,STATUS_REQUEST,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+122,29,C,W3,STATUS_REQUEST,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+123,30,W1,C,STATUS_RESPONSE,10,"{'cpu': 4, 'ram': 8, 'cpu_used': 0, 'ram_used': 0}"
+124,30,W2,C,STATUS_RESPONSE,10,"{'cpu': 8, 'ram': 16, 'cpu_used': 0, 'ram_used': 0}"
+125,30,W3,C,STATUS_RESPONSE,10,"{'cpu': 12, 'ram': 16, 'cpu_used': 1, 'ram_used': 8}"
+126,30,C,W4,STATUS_REQUEST,10,"{'cpu': 4, 'ram': 2, 'duration': 5}"
+127,30,C,G,TASK_RESULT,6,"{'result': 'SUCCESS', 'worker': 'W2', 'finished_at': 28}"
+128,30,C,W4,TASK_OFFER,9,{}
+129,31,W3,C,TASK_COMPLETE,8,{'finished_at': 31}
+130,31,W4,C,STATUS_RESPONSE,10,"{'cpu': 6, 'ram': 32, 'cpu_used': 0, 'ram_used': 0}"
+131,31,W4,C,TASK_ACCEPT,9,{}
+132,31,W4,C,TASK_START,9,{}
+133,32,C,G,TASK_RESULT,8,"{'result': 'SUCCESS', 'worker': 'W3', 'finished_at': 31}"
+134,33,C,W2,TASK_OFFER,10,{}
+135,34,W2,C,TASK_ACCEPT,10,{}
+136,34,W2,C,TASK_START,10,{}
+137,37,W4,C,TASK_COMPLETE,9,{'finished_at': 37}
+138,38,C,G,TASK_RESULT,9,"{'result': 'SUCCESS', 'worker': 'W4', 'finished_at': 37}"
+139,39,W2,C,TASK_COMPLETE,10,{'finished_at': 39}
+140,40,C,G,TASK_RESULT,10,"{'result': 'SUCCESS', 'worker': 'W2', 'finished_at': 39}"
